@@ -1,0 +1,101 @@
+body:not(.recipes-loaded) {
+    margin: 0;
+    padding: 0;
+    background-image: url("food2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.search-container {
+    margin: 10px;
+}
+
+input {
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 10px;
+    max-width: 300px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#mealDetailsModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40%;
+    max-height: 80%;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgba(56, 54, 54, 0.8); 
+    padding: 10px;
+    margin-top: auto;
+    text-align: center;
+    color: wheat;
+}
+
+.close-button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute; 
+    top: 15px; 
+    right: 50px; 
+}
