@@ -5,10 +5,10 @@ function createMealCard(meal) {
     card.classList.add("card");
     card.innerHTML = `
         <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
-        <h5>${meal.strMeal}</h5>
+        <h5 class="mealheader">${meal.strMeal}</h5>
         <p>Category: ${meal.strCategory}</p>
         <p>Area: ${meal.strArea}</p>
-        <button onclick="showMealDetails(${meal.idMeal})">View Details</button>
+        <button onclick="showMealDetails(${meal.idMeal})" style="border-radius:5px">View Details</button>
     `;
     return card;
 }
@@ -89,6 +89,8 @@ function searchMeals() {
                     mealCardsContainer.appendChild(card);
                 });
                 document.body.classList.add("recipes-loaded");
+                document.getElementById("searchInput").value = ""; // Clear search input
+                document.getElementById("searchButton").innerText = "Search Another Recipe"; // Change button text
             });
     }
     else {
