@@ -1,7 +1,7 @@
 body:not(.recipes-loaded) {
     margin: 0;
     padding: 0;
-    background-image: url("https://w0.peakpx.com/wallpaper/467/393/HD-wallpaper-food-dessert-still-life.jpg");
+    background-image: url("bgImage.avif");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
